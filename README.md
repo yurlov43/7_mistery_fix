@@ -10,7 +10,15 @@
 ```bash 
 from quadratic_equation import get_roots
 ```
-Тестирование проходит с помощью функций: test_solves_real_roots(), test_first_root_less_than_second(), test_second_root_is_none_if_one_solution() и test_returns_none_for_complex_solution().
+Тестирование проходит с помощью функций:
+
+```bash
+ test_solves_real_roots() #Проверка на наличие только одного корня равного 1 при дискриминанте равным 0
+ test_first_root_less_than_second() #проверка на наличие пары корней (первый корень равен -3, второй корень равен 1) при дискриминанте больше 0
+ test_second_root_is_none_if_one_solution() #проверка на отсутствие второго корня при дискриминанте равном 0
+ test_returns_none_for_complex_solution() #проверка на отсутствие корней при дискриминанте меньше 0
+ ```
+
 Каждая из них вызывает функцию get_roots() с определёнными коэффициентами квадратного уравнения:
 
 ```bash
